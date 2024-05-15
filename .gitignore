@@ -103,3 +103,4 @@ terraform.rc
 *.out
 *.plan
 
+/jte-classes/

@@ -33,9 +33,9 @@
 
   <dependencies>
     <dependency>
-      <groupId>org.thymeleaf</groupId>
-      <artifactId>thymeleaf</artifactId>
-      <version>3.1.2.RELEASE</version>
+      <groupId>gg.jte</groupId>
+      <artifactId>jte</artifactId>
+      <version>3.1.11</version>
     </dependency>
 
     <dependency>
