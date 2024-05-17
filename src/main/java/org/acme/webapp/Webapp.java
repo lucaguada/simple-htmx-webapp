@@ -10,19 +10,20 @@ import gg.jte.resolve.ResourceCodeResolver;
 import java.io.IOException;
 import java.io.InputStream;
 import java.net.InetSocketAddress;
+import java.util.Map;
 import java.util.Objects;
 import java.util.concurrent.Executors;
 
 import static java.nio.charset.StandardCharsets.UTF_8;
 
 public interface Webapp {
-  record Model(String firstName, String lastName) {}
+  record Model(String firstName, String lastName, String hero) {}
 
   static void main(String[] args) throws IOException {
-    var resolver = new ResourceCodeResolver("wwwroot");
+    var resolver = new ResourceCodeResolver("");
     var engine = TemplateEngine.create(resolver, ContentType.Html);
     var output = new StringOutput();
-    engine.render("index.jte", new Model("Bilbo", "Baggins"), output);
+    engine.render("wwwroot/index.jte", new Model("Bilbo", "Baggins", "hello"), output);
 
     var httpServer = HttpServer.create(new InetSocketAddress(8080), -1);
     httpServer.setExecutor(Executors.newVirtualThreadPerTaskExecutor());
