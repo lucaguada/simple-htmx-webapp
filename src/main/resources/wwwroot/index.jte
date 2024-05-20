@@ -18,17 +18,13 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <link rel="preload" href="./font/ProximaNova-Reg-webfont.woff2" as="font" type="font/woff2" crossorigin/>
-  <link rel="preload" href="./font/ProximaNova-Light-webfont.woff2" as="font" type="font/woff2" crossorigin/>
-
-  <script src="https://cdn.tailwindcss.com"></script>
-  <link href="https://cdn.jsdelivr.net/npm/daisyui@4.11.1/dist/full.min.css" rel="stylesheet" type="text/css" />
+  <link href="https://fonts.googleapis.com/css?family=Nunito:400,700&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com" type="application/javascript"></script>
+  <link href="./css/minimalistic.css" rel="stylesheet">
   <title>Webapp</title>
-  <style>
-    html, body { height: 100%; }
-  </style>
 </head>
-<body style="background-image: url(./img/blob-scene-haikei.svg); background-size: cover">
-  @template.component.blogGrid()
+<body class="bg-gray-100 text-gray-700 font-sans quicksand">
+  @template.component.blog()
 </body>
+<script src="./js/darktheme.js"></script>
 </html>
