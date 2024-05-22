@@ -19,12 +19,14 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <link href="https://fonts.googleapis.com/css?family=Nunito:400,700&display=swap" rel="stylesheet">
+  <script src="https://unpkg.com/alpinejs" defer></script>
   <script src="https://cdn.tailwindcss.com" type="application/javascript"></script>
   <link href="./css/minimalistic.css" rel="stylesheet">
   <title>Webapp</title>
 </head>
 <body class="bg-gray-100 text-gray-700 font-sans quicksand">
-  @template.component.blog()
+@template.fragment.blog()
+@template.fragment.header()
 </body>
 <script src="./js/darktheme.js"></script>
 </html>

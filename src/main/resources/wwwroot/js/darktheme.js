@@ -1,7 +1,6 @@
 //Toggle mode
-const element = document.querySelector('.js-change-theme');
+const element = document.getElementById('theme-button');
 const body = document.querySelector('body');
-//const profile = document.getElementById('profile');
 
 element.addEventListener('click', () => {
   if (body.classList.contains('text-gray-700')) {

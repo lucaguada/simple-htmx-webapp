@@ -48,14 +48,6 @@
   </div>
 </div>
 
-<!-- Pin to top left corner -->
-<div class="absolute top-0 left-0 h-12 w-18 p-4">
-  <strong>Anacleto's Blog</strong>
-  <button id="temple-toggle" class="js-change-theme focus:outline-none text-base-200/20">🧑‍💻</button>
-  <button id="temple-toggle" class="js-change-theme focus:outline-none text-base-200/20">🏛</button>
-  <button id="theme-toggle" class="js-change-theme focus:outline-none text-base-200/20">🌙</button>
-</div>
-
 <!-- jQuery if you need it
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 -->
