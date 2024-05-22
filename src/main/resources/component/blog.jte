@@ -1,7 +1,7 @@
 <!--suppress HtmlUnknownAttribute -->
 
-<div class="p-6 sm:p-10 md:p-16 flex">
-  <div class="w-full md:w-1/4 md:pr-32 order-3 md:order-1">
+<div class="flex w-screen p-6 sm:p-10 md:p-16">
+  <div class="md:w-1/4 md:pr-32 md:order-1 order-2">
     <div class="max-w-md md:float-right md:text-right leading-loose tracking-tight md:sticky md:top-0 ">
       <p class="font-bold my-4 md:my-12">Previous Posts</p>
 
@@ -48,8 +48,8 @@
   </div>
 </div>
 
-<!-- Pin to top right corner -->
-<div class="absolute top-0 right-0 h-12 w-18 p-4">
+<!-- Pin to top left corner -->
+<div class="absolute top-0 left-0 h-12 w-18 p-4">
   <strong>Anacleto's Blog</strong>
   <button id="temple-toggle" class="js-change-theme focus:outline-none text-base-200/20">🧑‍💻</button>
   <button id="temple-toggle" class="js-change-theme focus:outline-none text-base-200/20">🏛</button>
