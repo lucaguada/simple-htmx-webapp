@@ -38,8 +38,9 @@
     <div class="uk-container uk-container-expand">
       <div uk-navbar>
         <div class="uk-navbar-left">
-          <span id="anacleto" class="uk-navbar-item" style="font-weight: bold; font-size: 1rem">Anacleto's Blog</span>
+          <a id="anacleto" href="#" class="uk-navbar-item uk-link-reset" style="font-weight: bold; font-size: 1rem">Anacleto's Blog</a>
           <a class="uk-navbar-item uk-link-reset" href="#" uk-tooltip="title: Tech Blog; pos: bottom">🧑‍💻</a>
+          <a class="uk-navbar-item uk-link-reset" href="#" uk-tooltip="title: Writings Blog; pos: bottom">✒️</a>
           <a class="uk-navbar-item uk-link-reset" href="#" uk-tooltip="title: Mythology Blog; pos: bottom">🏛</a>
           <a class="uk-navbar-item uk-link-reset" href="#" uk-tooltip="title: Switch Theme; pos: bottom">🌙</a>
         </div>
@@ -47,24 +48,32 @@
     </div>
   </nav>
   <section class="uk-container uk-container-expand">
-    <div class="uk-flex uk-grid-large" uk-grid>
-      <div class="uk-width-2-5@m uk-flex-first@m uk-text-right">
+    <div class="uk-flex uk-grid-large" uk-grid="masonry: pack">
+      <div class="uk-width-2-5@m uk-width-1-4@xl uk-flex-first@m uk-text-right">
         <p class="uk-heading-line"><span style="font-weight: bold">Previous Posts</span></p>
         <ul class="uk-list">
-          <li><a class="uk-link-reset" href="">Is functional programming a pure theoretic paradigm?</a></li>
-          <li><a class="uk-link-reset" href="">How to develop a plain HTTP server in Java</a></li>
-          <li><a class="uk-link-reset" href="">How to implement CQRS properly</a></li>
-          <li><a class="uk-link-reset" href="">What is Event Sourcing and why does it matter?</a></li>
+          <li><a class="uk-button uk-button-text" style="text-transform: none;" href="">Is functional programming a pure theoretic paradigm?</a></li>
+          <li><a class="uk-button uk-button-text" style="text-transform: none;" href="">How to develop a plain HTTP server in Java</a></li>
+          <li><a class="uk-button uk-button-text" style="text-transform: none;" href="">How to implement CQRS properly</a></li>
+          <li><a class="uk-button uk-button-text" style="text-transform: none;" href="">What is Event Sourcing and why does it matter?</a></li>
         </ul>
+        <a href="" class="uk-link-reset uk-text-uppercase">More Posts <span uk-icon="arrow-right"></span></a>
       </div>
-      <div class="uk-width-3-5@m uk-flex-first@s uk-text-left">
-        <p class="uk-heading-line"><span style="font-weight: bold">How to design the Mammal object nowadays</span></p>
-      </div>
-      <div class="uk-width-2-5@m uk-flex-last@m uk-flex-last@s" uk-sticky="position: bottom">
-        <div class="uk-card uk-card-default uk-card-body uk-margin-small-bottom">A Riguardo</div>
+      @template.fragment.article()
+      <div class="uk-width-2-5@m uk-width-1-4@xl uk-flex-last@m uk-flex-last@s uk-text-right@m uk-text-left@xl">
+        <p class="uk-heading-line"><span style="font-weight: bold">About&amp;Contacts</span></p>
+        <ul class="uk-list">
+          <li><a class="uk-button uk-button-text" style="text-transform: none;" href="">Who's this guy? 🧔</a></li>
+          <li><a class="uk-button uk-button-text" style="text-transform: none;" href="">X.com ✖️‍</a></li>
+          <li><a class="uk-button uk-button-text" style="text-transform: none;" href="">LinkedIn 🧑‍💼</a></li>
+          <li><a class="uk-button uk-button-text" style="text-transform: none;" href="">E-Mail 📧</a></li>
+        </ul>
       </div>
     </div>
   </section>
+  <footer class="uk-container uk-container-expand uk-text-center uk-padding-large">
+    <p>© 2024 Anacleto is Luca Guadagnini - Made with <img src="./img/duke.svg" alt="duke" style="width: 32px; height: 32px;"> <span class="uk-text-primary" uk-icon="uikit"></span> <strong>htm<span class="uk-text-primary">x</span></strong></p>
+  </footer>
 </body>
 <script src="./js/darktheme.js"></script>
 </html>
