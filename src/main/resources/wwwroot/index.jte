@@ -50,7 +50,7 @@
   <section class="uk-container uk-container-expand">
     <div class="uk-flex uk-grid-large" uk-grid="masonry: pack">
       <div class="uk-width-2-5@m uk-width-1-4@xl uk-flex-first@m uk-flex-last@s uk-text-right@m uk-text-left@s">
-        <p class="uk-heading-line"><span style="font-weight: bold">Previous Posts</span></p>
+        <p class="uk-heading-line"><span style="font-weight: bold">Previous Post</span></p>
         <ul class="uk-list">
           <li><a class="uk-button uk-button-text" style="text-transform: none;" href="">Is functional programming a pure theoretic paradigm?</a></li>
           <li><a class="uk-button uk-button-text" style="text-transform: none;" href="">How to develop a plain HTTP server in Java</a></li>
