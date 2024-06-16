@@ -10,7 +10,6 @@ import gg.jte.resolve.ResourceCodeResolver;
 import java.io.IOException;
 import java.io.InputStream;
 import java.net.InetSocketAddress;
-import java.util.Map;
 import java.util.Objects;
 import java.util.concurrent.Executors;
 
@@ -19,13 +18,13 @@ import static java.nio.charset.StandardCharsets.UTF_8;
 public interface Webapp {
   record Model(String firstName, String lastName, String hero) {}
 
-  static void main(String[] args) throws IOException {
+  static void main() throws IOException {
     var resolver = new ResourceCodeResolver("");
     var engine = TemplateEngine.create(resolver, ContentType.Html);
     var output = new StringOutput();
     engine.render("wwwroot/index.jte", new Model("Bilbo", "Baggins", "hello"), output);
 
-    var httpServer = HttpServer.create(new InetSocketAddress(8080), -1);
+    var httpServer = HttpServer.create(new InetSocketAddress(8081), -1);
     httpServer.setExecutor(Executors.newVirtualThreadPerTaskExecutor());
     httpServer.createContext("/manifest", exchange -> {
       System.out.printf("Manifest requested: %s%n", exchange.getRequestURI().getPath());
